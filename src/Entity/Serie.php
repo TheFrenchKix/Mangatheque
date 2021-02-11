@@ -47,7 +47,12 @@ class Serie
     /**
      * @ORM\ManyToOne(targetEntity=Personne::class, inversedBy="Serie")
      */
-    private $personne;
+    private $dessinateur;
+
+    /**
+     * @ORM\ManyToOne(targetEntity=Personne::class, inversedBy="Serie")
+     */
+    private $senariste;
 
     public function __construct()
     {
@@ -138,14 +143,26 @@ class Serie
         return $this;
     }
 
-    public function getPersonne(): ?Personne
+    public function getDessinateur(): ?Personne
     {
-        return $this->personne;
+        return $this->dessinateur;
     }
 
-    public function setPersonne(?Personne $personne): self
+    public function setDessinateur(?Personne $dessinateur): self
     {
-        $this->personne = $personne;
+        $this->dessinateur = $dessinateur;
+
+        return $this;
+    }
+
+    public function getSenariste(): ?Personne
+    {
+        return $this->senariste;
+    }
+
+    public function Senariste(?Personne $senariste): self
+    {
+        $this->senariste = $senariste;
 
         return $this;
     }
