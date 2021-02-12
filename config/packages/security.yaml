@@ -17,6 +17,7 @@ security:
                 target: home
             form_login:
                 check_path: login
+                default_target_path: admin
 
             # activate different ways to authenticate
             # https://symfony.com/doc/current/security.html#firewalls-authentication
