@@ -8,11 +8,14 @@ use EasyCorp\Bundle\EasyAdminBundle\Field\AssociationField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\CurrencyField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\DateField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\IdField;
+use EasyCorp\Bundle\EasyAdminBundle\Field\ImageField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\IntegerField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\MoneyField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\NumberField;
+use EasyCorp\Bundle\EasyAdminBundle\Field\TextareaField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextEditorField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextField;
+use Vich\UploaderBundle\Form\Type\VichImageType;
 
 class MangaCrudController extends AbstractCrudController
 {
@@ -28,7 +31,8 @@ class MangaCrudController extends AbstractCrudController
             IntegerField::new('NbPages', "Nombre de Pages"),
             NumberField::new('PrixManga'),
             IntegerField::new('numSerie', "Tome"),
-            TextField::new('cheminImage'),
+            TextareaField::new('imageFile')->setFormType(VichImageType::class),
+            ImageField::new('image')->setBasePath('Images/Manga')->onlyOnDetail(),
             DateField::new('dateParution'),
             TextField::new('DescriptionManga'),
             AssociationField::new('Serie')

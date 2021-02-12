@@ -4,6 +4,13 @@
 
 {% block body %}
 <div class="container mt-4">
+    {% if error %}
+        <div class="alert alert-danger">
+            T'essayes de faire quoi ?
+            <br>
+            T'es pas ADMIN, bouge !
+        </div>
+    {% endif %}
     <form action="{{ path('login') }}" method="post">
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Identifiant</label>

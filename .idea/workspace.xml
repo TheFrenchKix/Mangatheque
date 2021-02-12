@@ -2,14 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e44f0775-69c2-43aa-b607-cb483329f847" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/config/packages/vich_uploader.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/TPMangatheque.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TPMangatheque.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/Admin/MangaCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/MangaCrudController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Categorie.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Categorie.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Editeur.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Editeur.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Personne.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Personne.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Serie.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Serie.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Manga.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Manga.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/welcome.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/welcome.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,6 +138,8 @@
       <path value="$PROJECT_DIR$/vendor/easycorp/easyadmin-bundle" />
       <path value="$PROJECT_DIR$/vendor/symfony/uid" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-uuid" />
+      <path value="$PROJECT_DIR$/vendor/vich/uploader-bundle" />
+      <path value="$PROJECT_DIR$/vendor/jms/metadata" />
     </include_path>
   </component>
   <component name="ProjectId" id="1oKttsi5PW97EIuOa55IBQra7jT" />
@@ -146,6 +154,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -170,6 +179,7 @@
       <workItem from="1613047328287" duration="2060000" />
       <workItem from="1613050715029" duration="7407000" />
       <workItem from="1613113778601" duration="10675000" />
+      <workItem from="1613126156210" duration="9112000" />
     </task>
     <servers />
   </component>
@@ -177,14 +187,22 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="484" y="248" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1613132871477">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="484" y="248" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900/1440.0.1280.1024@0.0.1440.900" timestamp="1613132871477" />
     <state x="525" y="130" key="#com.intellij.ide.util.MemberChooser" timestamp="1613058809059">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="525" y="130" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900/1440.0.1280.1024@0.0.1440.900" timestamp="1613058809059" />
-    <state x="450" y="204" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1613125164366">
+    <state x="450" y="204" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1613132974075">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="450" y="204" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900/1440.0.1280.1024@0.0.1440.900" timestamp="1613125164366" />
+    <state x="450" y="204" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900/1440.0.1280.1024@0.0.1440.900" timestamp="1613132974075" />
+    <state x="446" y="159" key="NewPhpClassDialog" timestamp="1613132927732">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="446" y="159" key="NewPhpClassDialog/0.0.1440.900/1440.0.1280.1024@0.0.1440.900" timestamp="1613132927732" />
     <state x="243" y="95" key="SettingsEditor" timestamp="1613050591760">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
