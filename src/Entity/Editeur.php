@@ -52,7 +52,7 @@ class Editeur
     }
 
     /**
-     * @return Collection|Serie[]
+     * @return Collection|Serie[]<
      */
     public function getSerie(): Collection
     {

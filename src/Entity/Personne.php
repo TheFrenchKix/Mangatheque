@@ -60,22 +60,44 @@ class Personne
         return $this->Serie;
     }
 
-    public function addSerie(Serie $serie): self
+    public function addSerieSenariste(Serie $serie): self
     {
         if (!$this->Serie->contains($serie)) {
             $this->Serie[] = $serie;
-            $serie->setPersonne($this);
+            $serie->setScenariste($this);
         }
 
         return $this;
     }
 
-    public function removeSerie(Serie $serie): self
+    public function addSerieDessinateur(Serie $serie): self
+    {
+        if (!$this->Serie->contains($serie)) {
+            $this->Serie[] = $serie;
+            $serie->setDessinateur($this);
+        }
+
+        return $this;
+    }
+
+    public function removeSerieDessinateur(Serie $serie): self
     {
         if ($this->Serie->removeElement($serie)) {
             // set the owning side to null (unless already changed)
-            if ($serie->getPersonne() === $this) {
-                $serie->setPersonne(null);
+            if ($serie->getDessinateur() === $this) {
+                $serie->setDessinateur(null);
+            }
+        }
+
+        return $this;
+    }
+
+    public function removeSerieScenariste(Serie $serie): self
+    {
+        if ($this->Serie->removeElement($serie)) {
+            // set the owning side to null (unless already changed)
+            if ($serie->getScenariste() === $this) {
+                $serie->setScenariste(null);
             }
         }
 

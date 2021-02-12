@@ -52,7 +52,7 @@ class Serie
     /**
      * @ORM\ManyToOne(targetEntity=Personne::class, inversedBy="Serie")
      */
-    private $senariste;
+    private $scenariste;
 
     public function __construct()
     {
@@ -155,14 +155,14 @@ class Serie
         return $this;
     }
 
-    public function getSenariste(): ?Personne
+    public function getScenariste(): ?Personne
     {
-        return $this->senariste;
+        return $this->scenariste;
     }
 
-    public function Senariste(?Personne $senariste): self
+    public function setScenariste(?Personne $scenariste): self
     {
-        $this->senariste = $senariste;
+        $this->scenariste = $scenariste;
 
         return $this;
     }
