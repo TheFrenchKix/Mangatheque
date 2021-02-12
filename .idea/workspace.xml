@@ -2,66 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e44f0775-69c2-43aa-b607-cb483329f847" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/crud/action.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/crud/detail.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/crud/edit.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/crud/field/array.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/crud/field/association.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/crud/field/avatar.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/crud/field/boolean.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/crud/field/choice.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/crud/field/code_editor.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/crud/field/collection.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/crud/field/color.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/crud/field/country.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/crud/field/currency.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/crud/field/date.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/crud/field/datetime.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/crud/field/email.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/crud/field/generic.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/crud/field/hidden.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/crud/field/id.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/crud/field/image.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/crud/field/integer.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/crud/field/language.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/crud/field/locale.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/crud/field/money.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/crud/field/number.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/crud/field/percent.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/crud/field/telephone.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/crud/field/text.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/crud/field/text_editor.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/crud/field/textarea.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/crud/field/time.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/crud/field/timezone.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/crud/field/url.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/crud/filters.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/crud/form_theme.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/crud/includes/_batch_action_modal.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/crud/includes/_delete_form.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/crud/includes/_filters_modal.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/crud/includes/_select2_widget.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/crud/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/crud/new.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/crud/paginator.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/exception.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/flash_messages.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/inspector/data_collector.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/inspector/icon.svg.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/label/empty.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/label/inaccessible.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/label/null.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/label/undefined.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/layout.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/menu.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/page/content.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/page/login.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/page/login_minimal.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/welcome.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/AdminController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/index.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/MangaCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/MangaCrudController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Categorie.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Categorie.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Editeur.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Editeur.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Personne.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Personne.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Serie.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Serie.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/welcome.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Bundle/EasyAdminBundle/welcome.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,6 +143,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -220,7 +169,7 @@
       <updated>1613047327102</updated>
       <workItem from="1613047328287" duration="2060000" />
       <workItem from="1613050715029" duration="7407000" />
-      <workItem from="1613113778601" duration="5636000" />
+      <workItem from="1613113778601" duration="10675000" />
     </task>
     <servers />
   </component>
@@ -232,6 +181,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="525" y="130" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900/1440.0.1280.1024@0.0.1440.900" timestamp="1613058809059" />
+    <state x="450" y="204" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1613125164366">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="450" y="204" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900/1440.0.1280.1024@0.0.1440.900" timestamp="1613125164366" />
     <state x="243" y="95" key="SettingsEditor" timestamp="1613050591760">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
