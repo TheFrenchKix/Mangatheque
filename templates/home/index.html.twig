@@ -35,7 +35,7 @@
 							<div class="hover-effect">
 								<div class="hover-content">
 									<h1><em>{{ manga.PrixManga }}€</em></h1>
-									<p>{{ manga.DescriptionManga }}</p>
+									<a href="{{ path('show_Manga',{id: manga.id}) }}"><p>{{ manga.DescriptionManga }}</p></a>
 								</div>
 							</div>
 							<div class="image">

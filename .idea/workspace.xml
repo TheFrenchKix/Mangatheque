@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e44f0775-69c2-43aa-b607-cb483329f847" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/MangaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MangaController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/manga/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/manga/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/manga/manga.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/manga/manga.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -175,7 +174,7 @@
       <workItem from="1615382012325" duration="447000" />
       <workItem from="1615475558161" duration="2249000" />
       <workItem from="1615543569356" duration="499000" />
-      <workItem from="1616149162782" duration="14576000" />
+      <workItem from="1616149162782" duration="14771000" />
     </task>
     <servers />
   </component>
