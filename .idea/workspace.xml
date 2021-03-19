@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e44f0775-69c2-43aa-b607-cb483329f847" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/templates/manga/manga.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20210211142328.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20210212123435.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20210212125716.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/templatemo-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/templatemo-style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/MangaCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/MangaCrudController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -145,7 +153,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../DecouverteSymfony" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
@@ -171,7 +179,10 @@
       <workItem from="1613126156210" duration="9191000" />
       <workItem from="1615378039378" duration="725000" />
       <workItem from="1615378800507" duration="15000" />
-      <workItem from="1615382012325" duration="422000" />
+      <workItem from="1615382012325" duration="447000" />
+      <workItem from="1615475558161" duration="2249000" />
+      <workItem from="1615543569356" duration="499000" />
+      <workItem from="1616149162782" duration="13943000" />
     </task>
     <servers />
   </component>
@@ -179,22 +190,24 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="484" y="248" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1613132871477">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="1870" y="282" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1616167363781">
+      <screen x="1440" y="0" width="1280" height="1024" />
     </state>
     <state x="484" y="248" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900/1440.0.1280.1024@0.0.1440.900" timestamp="1613132871477" />
+    <state x="1870" y="282" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900/1440.0.1280.1024@1440.0.1280.1024" timestamp="1616167363781" />
     <state x="525" y="130" key="#com.intellij.ide.util.MemberChooser" timestamp="1613058809059">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="525" y="130" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900/1440.0.1280.1024@0.0.1440.900" timestamp="1613058809059" />
-    <state x="450" y="204" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1613132974075">
+    <state x="450" y="204" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1616165193423">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="450" y="204" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900/1440.0.1280.1024@0.0.1440.900" timestamp="1613132974075" />
-    <state x="500" y="204" key="FileChooserDialogImpl" timestamp="1615378813781">
+    <state x="450" y="204" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900/1440.0.1280.1024@0.0.1440.900" timestamp="1616165193423" />
+    <state x="500" y="204" key="FileChooserDialogImpl" timestamp="1616165021671">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="500" y="204" key="FileChooserDialogImpl/0.0.1440.900/1440.0.1280.1024@0.0.1440.900" timestamp="1615378813781" />
+    <state x="500" y="204" key="FileChooserDialogImpl/0.0.1440.900/1440.0.1280.1024@0.0.1440.900" timestamp="1616165021671" />
+    <state x="1884" y="232" key="FileChooserDialogImpl/0.0.1440.900/1440.0.1280.1024@1440.0.1280.1024" timestamp="1615477186445" />
     <state x="446" y="159" key="NewPhpClassDialog" timestamp="1613132927732">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -203,9 +216,18 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="243" y="95" key="SettingsEditor/0.0.1440.900/1440.0.1280.1024@0.0.1440.900" timestamp="1615382237579" />
-    <state x="383" y="190" key="search.everywhere.popup" timestamp="1615378805974">
+    <state x="541" y="363" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1616166422902">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="383" y="190" key="search.everywhere.popup/0.0.1440.900/1440.0.1280.1024@0.0.1440.900" timestamp="1615378805974" />
+    <state x="541" y="363" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900/1440.0.1280.1024@0.0.1440.900" timestamp="1616166422902" />
+    <state x="376" y="205" key="run.anything.popup" timestamp="1616159019259">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="376" y="205" key="run.anything.popup/0.0.1440.900/1440.0.1280.1024@0.0.1440.900" timestamp="1616159019259" />
+    <state x="383" y="190" width="672" height="678" key="search.everywhere.popup" timestamp="1616160360520">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="383" y="190" width="672" height="678" key="search.everywhere.popup/0.0.1440.900/1440.0.1280.1024@0.0.1440.900" timestamp="1616160360520" />
+    <state x="1780" y="216" width="672" height="678" key="search.everywhere.popup/0.0.1440.900/1440.0.1280.1024@1440.0.1280.1024" timestamp="1615477817713" />
   </component>
 </project>

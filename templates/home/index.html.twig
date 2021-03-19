@@ -3,20 +3,9 @@
 {% block title %}Mangatheque{% endblock %}
 
 {% block body %}
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/bootstrap-theme.min.css">
-<link rel="stylesheet" href="css/fontAwesome.css">
-<link rel="stylesheet" href="css/light-box.css">
-<link rel="stylesheet" href="css/templatemo-style.css">
-
-<link href="https://fonts.googleapis.com/css?family=Kanit:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-
-<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-
 <nav>
 	<div class="logo">
-		<a href="index.html">Manga<em>chat</em></a>
+		<a href="/">Manga<em>theque</em></a>
 	</div>
 	<div class="menu-icon">
 	<span></span>
@@ -27,7 +16,7 @@
 	<div class="video-overlay"></div>
 	<div class="video-content">
 		<div class="inner">
-		  <h1>Welcome to <em>mangachat</em></h1>
+		  <h1>Bienvenue sur <em>mangatheque</em></h1>
 		  <p>SITE SPECIALISE DANS LES MANGAS</p>
 			<div class="scroll-icon">
 				<a class="scrollTo" data-scrollTo="portfolio" href="#"><img src="img/scroll-icon.png" alt=""></a>
@@ -37,19 +26,20 @@
 </div>
 <div class="full-screen-portfolio" id="portfolio">
 	<div class="container-fluid">
+		<h1>Dernières nouveautés</h1>
 		{% for manga in mangas %}
 			<div class="col-md-4 col-sm-6">
 				<div class="portfolio-item">
-					<a href="img/{{ manga.image }}" data-lightbox="image-1">
+					<a href="Images/Manga/{{ manga.image }}" data-lightbox="image-1">
 						<div class="thumb">
 							<div class="hover-effect">
 								<div class="hover-content">
-									<h1><em>{{ manga.PrixManga }}</em></h1>
+									<h1><em>{{ manga.PrixManga }}€</em></h1>
 									<p>{{ manga.DescriptionManga }}</p>
 								</div>
 							</div>
 							<div class="image">
-								<img src="img/portfolio_item_9.png">
+								<img src="Images/Manga/{{ manga.image }}">
 							</div>
 						</div>
 					</a>
@@ -60,15 +50,15 @@
 </div>
 
 
-<footer>
-	<div class="container-fluid">
-		<div class="col-md-12">
-			<p>Copyright &copy; 2018 Company Name
+{#<footer>#}
+{#	<div class="container-fluid">#}
+{#		<div class="col-md-12">#}
+{#			<p>Copyright &copy; 2018 Company Name#}
 
-| Designed by TemplateMo</p>
-		</div>
-	</div>
-</footer>
+{#| Designed by TemplateMo</p>#}
+{#		</div>#}
+{#	</div>#}
+{#</footer>#}
 
 
   <!-- Modal button -->
@@ -125,35 +115,20 @@
 	  <div class="main-menu">
 		  <ul>
 			  <li>
-				  <a href="index.html">Home - Full-width</a>
+				  <a href="/">Accueil</a>
 			  </li>
 			  <li>
-				  <a href="masonry.html">Home - Masonry</a>
+				  <a href="mangas">Mangas</a>
 			  </li>
 			  <li>
-				  <a href="grid.html">Home - Small-width</a>
+				  <a href="categorie">Categories</a>
 			  </li>
 			  <li>
-				  <a href="about.html">About Us</a>
-			  </li>
-			  <li>
-				  <a href="blog.html">Blog Entries</a>
-			  </li>
-			  <li>
-				  <a href="single-post.html">Single Post</a>
+				  <a href="editeur">Editeurs</a>
 			  </li>
 		  </ul>
-		  <p>We create awesome templates for you.</p>
 	  </div>
 	</div>
   </div>
 </section>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
-<script src="js/vendor/bootstrap.min.js"></script>
-
-<script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
 {% endblock %}

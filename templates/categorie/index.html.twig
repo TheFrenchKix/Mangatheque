@@ -1,0 +1,90 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello CategorieController!{% endblock %}
+
+{% block body %}
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="css/fontAwesome.css">
+<link rel="stylesheet" href="css/light-box.css">
+<link rel="stylesheet" href="css/templatemo-style.css">
+
+<link href="https://fonts.googleapis.com/css?family=Kanit:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+<nav>
+    <div class="logo">
+        <a href="/">Manga<em>theque</em></a>
+    </div>
+    <div class="menu-icon">
+        <span></span>
+    </div>
+</nav>
+
+<div id="video-container">
+    <div class="video-overlay"></div>
+    <div class="video-content">
+        <div class="inner">
+            <h1><em>Liste des </em>categories</h1>
+            <p>LES CATEGORIES ET LEURS MANGAS</p>
+            <div class="scroll-icon">
+                <a class="scrollTo" data-scrollTo="portfolio" href="#"><img src="img/scroll-icon.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="full-screen-portfolio" id="portfolio">
+    {% for categorie in categories %}
+        <div class="container-fluid">
+            <h1><a href="/categorie-{{ categorie.id }}">{{ categorie.nom }}</a></h1>
+            {% for manga in mangas %}
+                {% if manga.Serie.categorie.id == categorie.id %}
+                    <div class="col-md-4 col-sm-6">
+                        <div class="portfolio-item">
+                            <a href="Images/Manga/{{ manga.image }}" data-lightbox="image-1">
+                                <div class="thumb">
+                                    <div class="hover-effect">
+                                        <div class="hover-content">
+                                            <h1><em>{{ manga.PrixManga }}€</em></h1>
+                                            <p>Tome {{ manga.numSerie }}</p>
+                                            <p>{{ manga.DescriptionManga }}</p>
+                                        </div>
+                                    </div>
+                                    <div class="image">
+                                        <img src="Images/Manga/{{ manga.image }}">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+        <hr>
+    {% endfor %}
+</div>
+<section class="overlay-menu">
+    <div class="container">
+        <div class="row">
+            <div class="main-menu">
+                <ul>
+                    <li>
+                        <a href="/">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="mangas">Mangas</a>
+                    </li>
+                    <li>
+                        <a href="categorie">Categories</a>
+                    </li>
+                    <li>
+                        <a href="editeur">Editeurs</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

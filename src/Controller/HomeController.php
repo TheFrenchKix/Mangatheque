@@ -15,7 +15,7 @@ class HomeController extends AbstractController
      */
     public function index(MangaRepository $mangaRepository): Response
     {
-        $mangas = $mangaRepository->findAll();
+        $mangas = $mangaRepository->findBy(array(), array('id' => 'DESC'), 3);
 
         return $this->render('home/index.html.twig', [
             'controller_name' => 'HomeController',

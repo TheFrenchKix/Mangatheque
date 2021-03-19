@@ -31,8 +31,8 @@ class MangaCrudController extends AbstractCrudController
             IntegerField::new('NbPages', "Nombre de Pages"),
             NumberField::new('PrixManga'),
             IntegerField::new('numSerie', "Tome"),
-            TextareaField::new('imageFile')->setFormType(VichImageType::class),
-            ImageField::new('image')->setBasePath('Images/Manga')->onlyOnDetail(),
+            TextareaField::new('imageFile')->setFormType(VichImageType::class)->onlyOnForms(),
+            ImageField::new('image')->setBasePath('Images/Manga')->onlyOnIndex(),
             DateField::new('dateParution'),
             TextField::new('DescriptionManga'),
             AssociationField::new('Serie')
