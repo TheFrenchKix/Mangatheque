@@ -33,11 +33,9 @@ class MangaController extends AbstractController
     {
         $manga = $mangaRepository->find($id);
 
-        $mangas[] = $manga;
-
         return $this->render(
             'manga/manga.html.twig', [
-            'mangas' => $manga
+            'manga' => $manga
         ]);
     }
 }
