@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use App\Repository\MangaRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Vich\UploaderBundle\Mapping\Annotation as Vich;
 
@@ -58,6 +60,21 @@ class Manga
      * @Vich\UploadableField(mapping="image", fileNameProperty="image")
      */
     private $imageFile;
+
+    /**
+     * @ORM\OneToMany(targetEntity=Commentaire::class, mappedBy="manga")
+     */
+    private $commentaires;
+
+    public function __construct()
+    {
+        $this->commentaires = new ArrayCollection();
+    }
+
+    public function __toString()
+    {
+        return $this->Serie->getNom() . " | Tome " . $this->numSerie;
+    }
 
     public function getId(): ?int
     {
@@ -156,5 +173,35 @@ class Manga
     public function setImageFile($imageFile): void
     {
         $this->imageFile = $imageFile;
+    }
+
+    /**
+     * @return Collection|Commentaire[]
+     */
+    public function getCommentaires(): Collection
+    {
+        return $this->commentaires;
+    }
+
+    public function addCommentaire(Commentaire $commentaire): self
+    {
+        if (!$this->commentaires->contains($commentaire)) {
+            $this->commentaires[] = $commentaire;
+            $commentaire->setManga($this);
+        }
+
+        return $this;
+    }
+
+    public function removeCommentaire(Commentaire $commentaire): self
+    {
+        if ($this->commentaires->removeElement($commentaire)) {
+            // set the owning side to null (unless already changed)
+            if ($commentaire->getManga() === $this) {
+                $commentaire->setManga(null);
+            }
+        }
+
+        return $this;
     }
 }

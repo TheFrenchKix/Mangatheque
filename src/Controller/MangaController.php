@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Repository\CommentaireRepository;
 use App\Repository\MangaRepository;
 use App\Repository\SerieRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -21,7 +22,7 @@ class MangaController extends AbstractController
         return $this->render('manga/index.html.twig', [
             'controller_name' => 'MangaController',
             'mangas' => $mangas,
-            'series' => $series
+            'series' => $series,
         ]);
     }
 
@@ -29,13 +30,15 @@ class MangaController extends AbstractController
      * @Route("/manga-{id}", name="show_Manga")
      * @param int $id
      */
-    public function showManga(int $id, MangaRepository $mangaRepository)
+    public function showManga(int $id, MangaRepository $mangaRepository, CommentaireRepository $commentaireRepository)
     {
         $manga = $mangaRepository->find($id);
+        $commentaires = $commentaireRepository->findAll();
 
         return $this->render(
             'manga/manga.html.twig', [
-            'manga' => $manga
+            'manga' => $manga,
+            'commentaires' => $commentaires
         ]);
     }
 }

@@ -3,6 +3,7 @@
 namespace App\Controller\Admin;
 
 use App\Entity\Categorie;
+use App\Entity\Commentaire;
 use App\Entity\Editeur;
 use App\Entity\Manga;
 use App\Entity\Personne;
@@ -33,6 +34,7 @@ class DashboardController extends AbstractDashboardController
     {
         yield MenuItem::linktoDashboard('Dashboard', 'fa fa-home');
         yield MenuItem::linkToCrud('Manga', 'fas fa-book', Manga::class);
+        yield MenuItem::linkToCrud('Commentaires', 'fas fa-text', Commentaire::class);
         yield MenuItem::linkToCrud('Serie', 'fas fa-play', Serie::class);
         yield MenuItem::linkToCrud('Categorie', 'fas fa-tags', Categorie::class);
         yield MenuItem::linkToCrud('Personne', 'far fa-address-card', Personne::class);

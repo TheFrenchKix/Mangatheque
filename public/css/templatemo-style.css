@@ -346,7 +346,6 @@ hr{
   position: relative;
 }
 
-
 .portfolio-item .hover-effect .hover-content {
     position: absolute;
     text-align: left;
@@ -354,7 +353,6 @@ hr{
     bottom: 0;
     left: 0;
 }
-
 
 .full-screen-portfolio .portfolio-item h1 {
   position: relative;
@@ -402,9 +400,6 @@ hr{
   transform: translateY(0);
  }
 
-
-
-
 .popup-icon {
   position: fixed;
   bottom: 30px;
@@ -419,6 +414,24 @@ hr{
   background-color: transparent;
   outline: none;
   border: none;
+}
+
+.presentation{
+  display: flex;
+}
+
+.presentation .image{
+  flex: 1;
+}
+
+.presentation .text{
+  font-size: 18px;
+  flex: 1;
+}
+
+.commentaire{
+  font-size: 15px;
+  margin-left: 5%;
 }
 
 .modal-btn img {

@@ -2,7 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e44f0775-69c2-43aa-b607-cb483329f847" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/migrations/Version20210324131441.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/Admin/CommentaireCrudController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Commentaire.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/CommentaireRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/templatemo-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/templatemo-style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/MangaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MangaController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Manga.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Manga.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templatemo_520_highway/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templatemo_520_highway/blog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templatemo_520_highway/grid.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templatemo_520_highway/highway-loop.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templatemo_520_highway/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templatemo_520_highway/masonry.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templatemo_520_highway/prepros-6.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templatemo_520_highway/single-post.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/manga/manga.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/manga/manga.html.twig" afterDir="false" />
     </list>
@@ -174,7 +190,8 @@
       <workItem from="1615382012325" duration="447000" />
       <workItem from="1615475558161" duration="2249000" />
       <workItem from="1615543569356" duration="499000" />
-      <workItem from="1616149162782" duration="14771000" />
+      <workItem from="1616149162782" duration="14879000" />
+      <workItem from="1616587385911" duration="5703000" />
     </task>
     <servers />
   </component>
@@ -191,10 +208,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="525" y="130" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900/1440.0.1280.1024@0.0.1440.900" timestamp="1613058809059" />
-    <state x="450" y="204" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1616165193423">
+    <state x="450" y="204" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1616592843237">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="450" y="204" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900/1440.0.1280.1024@0.0.1440.900" timestamp="1616165193423" />
+    <state x="450" y="204" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900/1440.0.1280.1024@0.0.1440.900" timestamp="1616592843237" />
     <state x="500" y="204" key="FileChooserDialogImpl" timestamp="1616165021671">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -212,14 +229,18 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="541" y="363" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900/1440.0.1280.1024@0.0.1440.900" timestamp="1616166422902" />
+    <state x="434" y="145" width="571" height="610" key="find.popup" timestamp="1616588357613">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="434" y="145" width="571" height="610" key="find.popup/0.0.1440.900/1440.0.1280.1024@0.0.1440.900" timestamp="1616588357613" />
     <state x="376" y="205" key="run.anything.popup" timestamp="1616159019259">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="376" y="205" key="run.anything.popup/0.0.1440.900/1440.0.1280.1024@0.0.1440.900" timestamp="1616159019259" />
-    <state x="383" y="190" width="672" height="678" key="search.everywhere.popup" timestamp="1616160360520">
+    <state x="383" y="190" width="672" height="678" key="search.everywhere.popup" timestamp="1616587947042">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="383" y="190" width="672" height="678" key="search.everywhere.popup/0.0.1440.900/1440.0.1280.1024@0.0.1440.900" timestamp="1616160360520" />
+    <state x="383" y="190" width="672" height="678" key="search.everywhere.popup/0.0.1440.900/1440.0.1280.1024@0.0.1440.900" timestamp="1616587947042" />
     <state x="1780" y="216" width="672" height="678" key="search.everywhere.popup/0.0.1440.900/1440.0.1280.1024@1440.0.1280.1024" timestamp="1615477817713" />
   </component>
 </project>
