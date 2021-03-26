@@ -20,7 +20,8 @@ class CommentaireCrudController extends AbstractCrudController
         return [
             TextField::new('libelle'),
             IntegerField::new('note'),
-            AssociationField::new('manga')
+            AssociationField::new('manga'),
+            AssociationField::new('utilisateur')
         ];
     }
 }

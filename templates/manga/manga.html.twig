@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello MangaController!{% endblock %}
+{% block title %}{{ manga.Serie.nom }} | Tome {{ manga.numSerie }}{% endblock %}
 
 {% block body %}
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -41,7 +41,7 @@
         <div class="container-fluid">
             <div class="presentation">
                 <div class="image">
-                    <a href="Images/Manga/{{ manga.image }}" data-lightbox="image-1"><img src="Images/Manga/{{ manga.image }}"></a>
+                    <a style="width: 5%" href="Images/Manga/{{ manga.image }}" data-lightbox="image-1"><img src="Images/Manga/{{ manga.image }}"></a>
                 </div>
                 <div class="text">
                     <h1>{{ manga.Serie.nom }} - Tome {{ manga.numSerie }}</h1>
@@ -63,6 +63,37 @@
                 <div class="row">
                     <div class="col-md-8">
                         <div class="page-header">
+                            {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+                                <div class="CommentairePerso">
+                                    <div class="card">
+                                        <div class="row">
+                                            <div class="col-10">
+                                                <div class="comment-box ml-2">
+                                                    <h4>Ajouter un commentaire</h4>
+                                                    <form action="{{ path('add_MangaComment',{id: manga.id}) }}" method="post">
+                                                        <input style="text-align: center" name="note" value="note" type="number" step="1" min="0" max="20"/> / 20
+                                                        <br>
+                                                        <div class="comment-area"> <textarea name="lib" class="form-control" placeholder="Ici sera votre commentaire..." rows="4"></textarea> </div>
+                                                        <div class="comment-btns mt-2">
+                                                            <div class="row">
+                                                                <br>
+                                                                <div class="col-6">
+                                                                    <div class="pull-left"> <button class="btn btn-success btn-sm">Annuler</button> </div>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <div class="pull-right"> <button class="btn btn-success send btn-sm" type="submit">Envoyer <i class="fa fa-long-arrow-right ml-1"></i></button> </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% else %}
+                                <p>Vous devez être connecté pour commenter.</p>
+                            {% endif %}
                             <h1>Commentaires</h1>
                         </div>
                         <div class="comments-list">
@@ -71,7 +102,7 @@
                                     <div class="media">
                                         <p class="pull-right"><small>{{ commentaire.note }} / 20</small></p>
                                         <div class="media-body">
-                                            <h4 class="media-heading user_name">Nom utilisateur</h4>
+                                            <h4 class="media-heading user_name">{{ commentaire.utilisateur.username }}</h4>
                                             {{ commentaire.libelle }}
                                         </div>
                                     </div>
@@ -84,26 +115,4 @@
             </div>
         </div>
     </div>
-    <section class="overlay-menu">
-        <div class="container">
-            <div class="row">
-                <div class="main-menu">
-                    <ul>
-                        <li>
-                            <a href="/">Accueil</a>
-                        </li>
-                        <li>
-                            <a href="mangas">Mangas</a>
-                        </li>
-                        <li>
-                            <a href="categorie">Categories</a>
-                        </li>
-                        <li>
-                            <a href="editeur">Editeurs</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
 {% endblock %}

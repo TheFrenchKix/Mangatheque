@@ -48,8 +48,8 @@
                                     <div class="hover-effect">
                                         <div class="hover-content">
                                             <h1><em>{{ manga.PrixManga }}€</em></h1>
-                                            <p>Tome {{ manga.numSerie }}</p>
-                                            <a href="{{ path('show_Manga',{id: manga.id}) }}"><p>{{ manga.DescriptionManga }}</p></a>
+                                            <a href="{{ path('show_Manga',{id: manga.id}) }}"><p>Tome {{ manga.numSerie }}</p></a>
+                                            <p>{{ manga.DescriptionManga }}</p>
                                         </div>
                                     </div>
                                     <div class="image">
@@ -65,26 +65,4 @@
         <hr>
     {% endfor %}
 </div>
-<section class="overlay-menu">
-    <div class="container">
-        <div class="row">
-            <div class="main-menu">
-                <ul>
-                <li>
-                    <a href="/">Accueil</a>
-                </li>
-                <li>
-                    <a href="mangas">Mangas</a>
-                </li>
-                <li>
-                    <a href="categorie">Categories</a>
-                </li>
-                <li>
-                    <a href="editeur">Editeurs</a>
-                </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
 {% endblock %}
