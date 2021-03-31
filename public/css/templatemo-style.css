@@ -1311,9 +1311,6 @@ footer a:hover {
   opacity: 0.5;
 }
 
-
-
-
 @media (max-width: 530px) {
 
   .modal-header h3 {
@@ -1467,5 +1464,4 @@ footer a:hover {
   .rating:hover>input:checked~label:before {
     opacity: 0.4
   }
-
 }

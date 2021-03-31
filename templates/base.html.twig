@@ -31,9 +31,15 @@
                 <div class="row">
                     <div class="main-menu">
                         <ul>
-                            <li>
-                                <a href="login">Connexion</a>
-                            </li>
+                            {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+                                <li>
+                                    <a href="logout">Deconnexion</a>
+                                </li>
+                                {% else %}
+                                <li>
+                                    <a href="login">Connexion</a>
+                                </li>
+                            {% endif %}
                             <li>
                                 <a href="/">Accueil</a>
                             </li>
