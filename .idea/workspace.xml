@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e44f0775-69c2-43aa-b607-cb483329f847" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/templatemo-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/templatemo-style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/LoginController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/login/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/manga/manga.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/manga/manga.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +180,7 @@
       <workItem from="1616742634428" duration="591000" />
       <workItem from="1616760199068" duration="12966000" />
       <workItem from="1617188962263" duration="1463000" />
-      <workItem from="1617192624385" duration="4742000" />
+      <workItem from="1617192624385" duration="7886000" />
     </task>
     <servers />
   </component>

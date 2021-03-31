@@ -16,9 +16,9 @@
 <div class="container mt-4">
     {% if error %}
         <div class="alert alert-danger">
-            T'essayes de faire quoi ?
+            Identifiant ou Mot de Passe incorrect
             <br>
-            T'es pas ADMIN, bouge !
+            Veuillez vérifier vos informations
         </div>
     {% endif %}
     <form action="{{ path('login') }}" method="post">
