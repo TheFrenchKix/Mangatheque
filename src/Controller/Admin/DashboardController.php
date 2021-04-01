@@ -8,6 +8,7 @@ use App\Entity\Editeur;
 use App\Entity\Manga;
 use App\Entity\Personne;
 use App\Entity\Serie;
+use App\Entity\Utilisateur;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Dashboard;
 use EasyCorp\Bundle\EasyAdminBundle\Config\MenuItem;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractDashboardController;
@@ -39,5 +40,6 @@ class DashboardController extends AbstractDashboardController
         yield MenuItem::linkToCrud('Categorie', 'fas fa-tags', Categorie::class);
         yield MenuItem::linkToCrud('Personne', 'far fa-address-card', Personne::class);
         yield MenuItem::linkToCrud('Editeur', 'fas fa-user-edit', Editeur::class);
+        yield MenuItem::linkToCrud('Utilisateurs', 'fas fa-user', Utilisateur::class);
     }
 }
