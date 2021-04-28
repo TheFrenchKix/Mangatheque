@@ -8,14 +8,11 @@
         {
             padding-top: 20px;
         }
-        .container .form-control
+        .container
         {
             width: 15%;
         }
     </style>
-    {% for flashError in app.flashes('verify_email_error') %}
-        <div class="alert alert-danger" role="alert">{{ flashError }}</div>
-    {% endfor %}
 
 <div class="container mt-4">
     <div class="mb-3">
